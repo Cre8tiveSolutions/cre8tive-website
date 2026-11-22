@@ -152,7 +152,9 @@
   gsap.to('#eScroll', { yPercent: -22, rotation: 16, scale: 0.72, ease: 'none', scrollTrigger: heroST });
   gsap.to('.hl1 .lni, .hl2 .lni', { xPercent: -6, ease: 'none', scrollTrigger: heroST });
   gsap.to('.hl3 .lni, .hl4 .lni', { xPercent: 6, ease: 'none', scrollTrigger: heroST });
-  gsap.to(['#heroP', '#heroBtns'], { y: -40, opacity: 0.2, ease: 'none', scrollTrigger: heroST });
+    ['#heroP', '#heroBtns'].forEach(function (sel) {
+    gsap.to(sel, { y: -30, opacity: 0.25, ease: 'none', scrollTrigger: { trigger: sel, start: 'top 22%', end: 'bottom top', scrub: 0.6 } });
+  });
 
   // 3. 3D tilt on the 8 (mouse only)
   if (matchMedia('(hover: hover)').matches) {
