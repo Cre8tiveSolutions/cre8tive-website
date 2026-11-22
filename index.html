@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cre8tive Solutions — Websites &amp; business systems, Singapore</title>
+<meta name="description" content="Cre8tive Solutions designs the website your customers see and builds the system your team runs on — quotes, bookings, jobs and invoices. One studio, both sides. Singapore.">
+<meta name="theme-color" content="#F4F4F1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cre8tive Solutions — The website out front. The system out back.">
+<meta property="og:description" content="Marketing websites and the business systems behind them, built as one. Singapore.">
+<meta property="og:image" content="og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F4F1}a{color:#121214;text-decoration:none}button{font:inherit}
+.mono{font-family:'Geist Mono',monospace;font-size:11.5px;letter-spacing:.04em}
+.grid{background-image:radial-gradient(#D6D5CF 1px,transparent 1px);background-size:22px 22px}
+.ln{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}.lni{display:block;will-change:transform}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,75,255,.45)}100%{box-shadow:0 0 0 10px rgba(47,75,255,0)}}
+.ring{position:absolute;border-radius:50%;background:conic-gradient(from 210deg,#FDFDFC,#A9A9A5 12%,#F4F4F2 24%,#5E5E5B 38%,#ECECE9 50%,#8B8B87 63%,#FFFFFF 76%,#B7B7B3 88%,#FDFDFC);-webkit-mask:radial-gradient(closest-side,transparent 72%,#000 73%);mask:radial-gradient(closest-side,transparent 72%,#000 73%)}
+.ring::after{content:'';position:absolute;inset:0;border-radius:50%;background:linear-gradient(155deg,rgba(255,255,255,.75),rgba(255,255,255,0) 38%,rgba(0,0,0,.18))}
+.cap{position:absolute;left:0;bottom:0;transition:opacity .6s,filter .6s,transform .6s}
+.anno{position:absolute;z-index:5;opacity:0;transform:translateY(4px);transition:opacity .35s,transform .35s;pointer-events:none;white-space:nowrap;background:#2F4BFF;color:#fff;border-radius:6px;padding:3px 8px}
+.back .anno{opacity:1;transform:none}.back .tg{outline:1px dashed #2F4BFF;outline-offset:8px;border-radius:6px}.back .grid{background-image:radial-gradient(#B9C2FF 1px,transparent 1px)}
+.pill{transition:box-shadow .3s}.pill:hover{box-shadow:0 14px 30px rgba(18,18,20,.18)}.pill .ar{transition:transform .45s cubic-bezier(.2,.7,.2,1)}.pill:hover .ar{transform:rotate(45deg)}
+.ghost{transition:background .25s}.ghost:hover{background:#E9E8E3}
+.svc{transition:background .25s,padding .35s cubic-bezier(.2,.7,.2,1)}.svc:hover{background:#ECEBE6;padding-left:20px}.svc .ar{transition:transform .3s}.svc:hover .ar{transform:translate(4px,-4px)}
+.w{color:#C9C7C0}
+
+.vt{border:0;background:transparent;color:#6E6C66;border-radius:999px;padding:7px 12px;cursor:pointer;transition:background .25s,color .25s}
+.vt[aria-pressed="true"]{background:#fff;color:#121214;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.back .vt[aria-pressed="true"]{background:#121214;color:#fff}
+.indrow{display:flex;align-items:center;gap:16px;width:100%;border:0;border-bottom:1px solid #D8D6CF;padding:12px 14px;background:transparent;color:#121214;cursor:pointer;text-align:left;font:inherit;transition:background .25s,color .25s,padding .35s}
+.indrow:hover{background:#ECEBE6;padding-left:20px}
+.indrow .num{width:26px;color:#8A8882}.indrow .nm{flex:1;font-size:18px;font-weight:500;letter-spacing:-.025em}
+.indrow .tag{font-size:10px;border:1px solid #2F4BFF;color:#2F4BFF;border-radius:999px;padding:2px 8px}
+.indrow .ia{color:#8EA0FF;opacity:0;transition:opacity .25s}
+.indrow.on,.indrow.on:hover{background:#121214;color:#F4F4F1;border-bottom-color:#121214;padding-left:14px}
+.indrow.on .num{color:#8EA0FF}.indrow.on .nm{font-weight:600}.indrow.on .tag{background:#2F4BFF;color:#fff}.indrow.on .ia{opacity:1}
+:focus-visible{outline:2px solid #2F4BFF;outline-offset:3px}
+#flow{overflow-x:clip}html,body{overflow-x:clip}
+@media (max-width:760px){
+  header nav a.nv[href="#flow"],header nav a.nv[href="#prices"]{display:none}
+  #lens{height:460px!important}#lens .lsplit>div:last-child{display:none}
+  #lens .lensTop,#lens>div:first-child{padding:22px!important}
+  #toast,#rail,.elab{display:none!important}
+  #industries .indrow .nm{font-size:16px}
+  #indPanel{padding:22px!important}
+}
+</style>
+</head>
+<body>
+<div id="pg" class="front" style="font-family:Geist,system-ui,sans-serif;color:#121214;background:#F4F4F1;min-height:100vh;position:relative">
+
+<!-- ===== INSTRUMENT LAYER ===== -->
+<div id="topbar" aria-hidden="true" style="position:fixed;top:0;left:0;height:2px;width:100%;background:#2F4BFF;transform-origin:left;transform:scaleX(0);z-index:60"></div>
+<div id="rail" aria-hidden="true" style="position:fixed;right:18px;top:110px;bottom:150px;width:10px;z-index:45;pointer-events:none;background:repeating-linear-gradient(to bottom,#C9C7C0 0 1px,transparent 1px 16px);background-size:6px 100%;background-repeat:repeat-y;background-position:right">
+  <div id="railDot" style="position:absolute;right:-3px;top:0;display:flex;align-items:center;gap:8px;transform:translateY(-50%)">
+    <span class="mono" style="background:#fff;border:1px solid #D8D6CF;border-radius:6px;padding:3px 8px;color:#121214;white-space:nowrap" id="secLbl">Front</span>
+    <span style="width:8px;height:8px;border-radius:50%;background:#2F4BFF;flex-shrink:0"></span>
+  </div>
+</div>
+<div id="toast" aria-live="polite" style="position:fixed;left:24px;bottom:22px;z-index:45;transition:opacity .4s,transform .4s;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid #E2E0D9;border-radius:999px;padding:8px 16px 8px 10px;font-size:13px;box-shadow:0 8px 24px rgba(18,18,20,.06)">
+  <span style="width:9px;height:9px;border-radius:50%;background:#2F4BFF;animation:pulse 1.6s infinite"></span>
+  <span class="mono" id="logTag" style="color:#8A8882">LIVE DEMO</span><span id="logTxt">New enquiry · Sarah T.</span>
+</div>
+<div id="fall" aria-hidden="true" style="position:absolute;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#2F4BFF;box-shadow:0 0 0 6px rgba(47,75,255,.14);opacity:0;z-index:44;pointer-events:none"></div>
+
+<!-- ===== NAV ===== -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(244,244,241,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)">
+  <div style="max-width:1360px;margin:0 auto;padding:16px clamp(20px,4vw,56px);display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+    <a class="nv" href="#" style="font-weight:700;font-size:21px;letter-spacing:-.045em">cre8tive<span style="color:#2F4BFF">.</span></a>
+    <nav style="display:flex;flex-wrap:wrap;gap:22px;align-items:center;font-size:14px;font-weight:500">
+      <a class="nv" href="#flow">The flow</a><a class="nv" href="#prices">Prices</a>
+      <div class="nv" role="group" aria-label="View" style="display:flex;background:#E9E8E3;border-radius:999px;padding:3px">
+        <button id="btnFront" class="mono vt" aria-pressed="true">Front</button><button id="btnBack" class="mono vt" aria-pressed="false">Back</button>
+      </div>
+      <a class="pill mag nv" href="#contact" style="display:flex;align-items:center;gap:10px;background:#121214;color:#F4F4F1;padding:6px 6px 6px 16px;border-radius:999px">Start a project <span class="ar" style="width:28px;height:28px;border-radius:50%;background:#2F4BFF;display:flex;align-items:center;justify-content:center;color:#fff">↗</span></a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="grid" style="position:relative;overflow:hidden">
+  <div style="max-width:1360px;margin:0 auto;padding:28px clamp(20px,4vw,56px) 72px;display:flex;flex-wrap:wrap;gap:24px 40px;align-items:flex-end;min-height:600px;box-sizing:border-box">
+    <div style="flex:999 1 640px;min-width:0;display:flex;flex-direction:column;gap:22px;padding-bottom:8px">
+      <span id="eyebrow" class="mono" style="color:#6E6C66">Web &amp; software studio — Singapore</span>
+      <h1 class="tg" style="position:relative;margin:0;font-size:clamp(52px,6.6vw,100px);line-height:.92;letter-spacing:-.06em;font-weight:600">
+        <span class="ln hl1"><span class="lni">The website</span></span>
+        <span class="ln hl2"><span class="lni">out front.</span></span>
+        <span class="ln hl3" style="color:#A8A69F"><span class="lni">The system</span></span>
+        <span class="ln hl4" style="color:#A8A69F"><span class="lni">out back.</span></span>
+        <span class="anno mono" style="left:0;bottom:-34px">Front · what customers see</span>
+      </h1>
+    </div>
+    <div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:28px;align-items:flex-start">
+      <!-- the 3D eight: scroll > intro > float > tilt -->
+      <div aria-hidden="true" style="position:relative;width:240px;height:376px;align-self:center;perspective:900px">
+        <div id="eScroll" style="position:absolute;left:0;top:0;width:300px;height:470px;transform:scale(.8);transform-origin:0 0">
+          <div id="eShadow" style="position:absolute;left:30px;top:446px;width:240px;height:28px;border-radius:50%;background:radial-gradient(closest-side,rgba(18,18,20,.26),rgba(18,18,20,0));filter:blur(3px)"></div>
+          <div id="eIntro" style="position:absolute;inset:0">
+            <div id="eFloat" style="position:absolute;inset:0">
+              <div id="eTilt" style="position:absolute;inset:0;transform-style:preserve-3d;filter:drop-shadow(0 22px 26px rgba(18,18,20,.18))">
+                <div id="ringBot" style="position:absolute;inset:0">
+                  <div class="ring" style="left:20px;top:186.4px;width:260px;height:260px"></div>
+                  <div style="position:absolute;left:53px;top:219.4px;width:194px;height:194px;border-radius:50%;border:1.5px solid #121214;box-sizing:border-box;opacity:.35"></div>
+                </div>
+                <div id="ringTop" style="position:absolute;inset:0">
+                  <div class="ring" style="left:40px;top:0;width:220px;height:220px"></div>
+                  <div style="position:absolute;left:68px;top:28px;width:164px;height:164px;border-radius:50%;border:1.5px solid #2F4BFF;box-sizing:border-box;opacity:.7"></div>
+                </div>
+                <svg id="eight" viewBox="0 0 300 450" width="300" height="450" style="position:absolute;left:0;top:0;overflow:visible">
+                  <circle id="loopDot" r="7" fill="#2F4BFF"><animateMotion dur="6s" repeatCount="indefinite" path="M150,204.6 A94.6,94.6 0 1,1 150,15.4 A94.6,94.6 0 1,1 150,204.6 A111.8,111.8 0 1,0 150,428.2 A111.8,111.8 0 1,0 150,204.6"></animateMotion></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="mono elab" style="position:absolute;left:262px;top:70px;display:flex;align-items:center;gap:6px;white-space:nowrap"><span class="lead" style="width:28px;border-top:1px solid #121214"></span>FRONT · website</div>
+          <div class="mono elab" style="position:absolute;right:270px;top:330px;display:flex;align-items:center;gap:6px;white-space:nowrap;color:#6E6C66">system · BACK<span class="lead" style="width:28px;border-top:1px solid #6E6C66;transform-origin:right"></span></div>
+        </div>
+      </div>
+      <p id="heroP" style="margin:0;font-size:20px;line-height:1.45;font-weight:300;max-width:30ch;color:#3D3C38">We design the website your customers see, and build the software your team runs on. <span style="font-weight:500;color:#121214">One studio, both sides.</span></p>
+      <div id="heroBtns" style="display:flex;flex-wrap:wrap;gap:10px;position:relative">
+        <a class="pill tg mag" href="#contact" style="display:flex;align-items:center;gap:12px;background:#121214;color:#F4F4F1;padding:8px 8px 8px 22px;border-radius:999px;font-weight:600">Start a project <span class="ar" style="width:36px;height:36px;border-radius:50%;background:#2F4BFF;display:flex;align-items:center;justify-content:center;color:#fff">↗</span></a>
+        <a class="ghost mag" href="#flow" style="border:1px solid #CFCDC6;padding:15px 22px;border-radius:999px;font-weight:500;background:#fff">Watch it work ↓</a>
+        <span class="anno mono" style="left:0;top:64px">→ creates a lead in your system</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE FLOW (GSAP scrubbed) ===== -->
+<section id="flow" class="grid" style="border-top:1px solid #E2E0D9">
+  <div id="flowTrack" style="height:3600px;position:relative">
+    <div id="flowStick" style="position:sticky;top:62px;height:700px;max-width:1360px;margin:0 auto;padding:28px clamp(20px,4vw,56px) 36px;box-sizing:border-box;display:flex;flex-direction:column">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px">
+        <div class="mono" style="display:flex;flex-direction:column;gap:4px"><span style="color:#8A8882">The flow</span><span>From enquiry to invoice.</span></div>
+        <div style="text-align:right"><div class="mono" style="color:#8A8882">Enquiry → Paid</div><div style="font-size:84px;line-height:.9;letter-spacing:-.06em;font-weight:500;color:#D2D0C9;font-variant-numeric:tabular-nums"><span id="pctNum">000</span><span style="font-size:32px">%</span></div></div>
+      </div>
+
+      <div id="stageWrap" style="flex:1;position:relative;min-height:0">
+        <div id="stage" style="position:absolute;left:50%;top:48px;width:1100px;height:470px;margin-left:-550px;transform-origin:top center">
+          <svg viewBox="0 0 1100 470" width="1100" height="470" aria-hidden="true" style="position:absolute;inset:0;overflow:visible">
+            <path id="conn1" d="M470,215 C540,215 560,125 630,125" fill="none" stroke="#2F4BFF" stroke-width="1.5" pathLength="1000" style="stroke-dasharray:1000"></path>
+            <path id="conn2" d="M470,300 C540,300 560,350 630,350" fill="none" stroke="#B9B7B0" stroke-width="1" stroke-dasharray="4 5"></path>
+          </svg>
+          <div id="wDims" class="mono" style="position:absolute;left:0;top:-4px;width:470px;display:flex;align-items:center;gap:8px;color:#C24A3A"><span style="flex:1;border-top:1px solid #E8A99F"></span>470 × 400 · website<span style="flex:1;border-top:1px solid #E8A99F"></span></div>
+          <div id="sDims" class="mono" style="position:absolute;left:630px;top:-4px;width:470px;display:flex;align-items:center;gap:8px;color:#C24A3A"><span style="flex:1;border-top:1px solid #E8A99F"></span>470 × 400 · system<span style="flex:1;border-top:1px solid #E8A99F"></span></div>
+
+          <!-- WEBSITE -->
+          <div id="wFrame" style="position:absolute;left:0;top:20px;width:470px;height:400px;border:1px solid #BDBBB4;border-radius:14px;background:rgba(255,255,255,.8);box-shadow:0 30px 60px rgba(18,18,20,.07)">
+            <div style="display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid #E2E0D9"><span style="width:8px;height:8px;border-radius:50%;background:#D6D4CD"></span><span style="width:8px;height:8px;border-radius:50%;background:#D6D4CD"></span><span style="width:8px;height:8px;border-radius:50%;background:#D6D4CD"></span><span class="mono" style="margin-left:10px;color:#8A8882;font-size:10px">yourcompany.com</span></div>
+            <div style="padding:20px 24px;display:flex;flex-direction:column;gap:10px">
+              <div class="wh" style="height:16px;width:62%;background:#121214;border-radius:3px"></div><div class="wh" style="height:16px;width:44%;background:#121214;border-radius:3px"></div>
+              <div class="wh" style="height:7px;width:70%;background:#E2E0D9;border-radius:3px;margin-top:4px"></div>
+            </div>
+          </div>
+          <div id="wSearch" class="mono" style="position:absolute;left:24px;top:-46px;background:#fff;border:1px solid #D8D6CF;border-radius:999px;padding:7px 14px">⌕ movers near me</div>
+          <div style="position:absolute;left:24px;top:150px;width:200px;display:flex;flex-direction:column;gap:8px">
+            <div class="wf" style="height:30px;border:1px solid #D8D6CF;border-radius:7px;background:#fff;display:flex;align-items:center;padding:0 10px;font-size:12px"><span class="fv">Sarah Tan</span></div>
+            <div class="wf" style="height:30px;border:1px solid #D8D6CF;border-radius:7px;background:#fff;display:flex;align-items:center;padding:0 10px;font-size:12px"><span class="fv">Yishun → Tampines</span></div>
+            <div class="wf" style="height:30px;border:1px solid #D8D6CF;border-radius:7px;background:#fff;display:flex;align-items:center;padding:0 10px;font-size:12px"><span class="fv">4-room · 12 Dec</span></div>
+            <div id="wBtn" style="height:32px;border-radius:999px;background:#121214;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">Get my quote</div>
+          </div>
+          <div id="cal" style="position:absolute;left:250px;top:150px;width:196px">
+            <div class="mono" style="font-size:10px;color:#8A8882;margin-bottom:6px">December</div>
+            <div style="display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px">
+              <div id="d1" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">1</div><div id="d2" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">2</div><div id="d3" class="cd" style="height:22px;border-radius:5px;background:#E9E8E3;color:#B9B7B0;font-size:10px;display:flex;align-items:center;justify-content:center">3</div><div id="d4" class="cd" style="height:22px;border-radius:5px;background:#E9E8E3;color:#B9B7B0;font-size:10px;display:flex;align-items:center;justify-content:center">4</div><div id="d5" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">5</div><div id="d6" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">6</div><div id="d7" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">7</div><div id="d8" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">8</div><div id="d9" class="cd" style="height:22px;border-radius:5px;background:#E9E8E3;color:#B9B7B0;font-size:10px;display:flex;align-items:center;justify-content:center">9</div><div id="d10" class="cd" style="height:22px;border-radius:5px;background:#E9E8E3;color:#B9B7B0;font-size:10px;display:flex;align-items:center;justify-content:center">10</div><div id="d11" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">11</div><div id="d12" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">12</div><div id="d13" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">13</div><div id="d14" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">14</div><div id="d15" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">15</div><div id="d16" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">16</div><div id="d17" class="cd" style="height:22px;border-radius:5px;background:#E9E8E3;color:#B9B7B0;font-size:10px;display:flex;align-items:center;justify-content:center">17</div><div id="d18" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">18</div><div id="d19" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">19</div><div id="d20" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">20</div><div id="d21" class="cd" style="height:22px;border-radius:5px;background:#fff;color:#121214;font-size:10px;display:flex;align-items:center;justify-content:center">21</div>
+            </div>
+            <div id="dep" style="margin-top:8px;font-size:11px;font-weight:600">Deposit paid ✓</div>
+          </div>
+
+          <!-- SYSTEM -->
+          <div id="sFrame" style="position:absolute;left:630px;top:20px;width:470px;height:400px;border-radius:14px;background:#141416;color:#EDEDEA;box-shadow:0 40px 80px rgba(18,18,20,.22)">
+            <div class="mono" style="display:flex;justify-content:space-between;padding:12px 16px;border-bottom:1px solid #26262A;color:#8A8882;font-size:10px"><span>ops.yourcompany.com</span><span style="color:#8EA0FF">● live</span></div>
+          </div>
+          <div id="rowQ" style="position:absolute;left:652px;top:72px;width:426px;height:40px;border-radius:9px;background:#1F1F23;color:#EDEDEA;display:flex;align-items:center;justify-content:space-between;padding:0 14px;box-sizing:border-box;font-size:13px"><span>Quote · Sarah Tan</span><span class="mono" style="color:#8EA0FF;font-size:10px">auto-priced · sent</span></div>
+          <div id="rowB" style="position:absolute;left:652px;top:120px;width:426px;height:40px;border-radius:9px;background:#1F1F23;color:#EDEDEA;display:flex;align-items:center;justify-content:space-between;padding:0 14px;box-sizing:border-box;font-size:13px"><span>Booking · 12 Dec</span><span class="mono" style="color:#8EA0FF;font-size:10px">deposit received</span></div>
+          <div id="sched" style="position:absolute;left:652px;top:178px;width:300px;display:flex;flex-direction:column;gap:7px">
+            <div class="mono" style="font-size:10px;color:#8A8882;display:flex;justify-content:space-between"><span>12 Dec</span><span>8am — 4pm</span></div>
+            <div style="display:grid;grid-template-columns:70px 1fr;align-items:center;font-size:11px;color:#B9B7B0"><span>Crew A</span><div style="height:14px;border-radius:4px;background:#26262A;position:relative"><div class="bar" style="position:absolute;left:0;width:72%;height:14px;border-radius:4px;background:#2F4BFF;transform-origin:left"></div></div></div>
+            <div style="display:grid;grid-template-columns:70px 1fr;align-items:center;font-size:11px;color:#B9B7B0"><span>Lorry 2</span><div style="height:14px;border-radius:4px;background:#26262A;position:relative"><div class="bar" style="position:absolute;left:0;width:72%;height:14px;border-radius:4px;background:#EDEDEA;transform-origin:left"></div></div></div>
+            <div style="display:grid;grid-template-columns:70px 1fr;align-items:center;font-size:11px;color:#B9B7B0"><span>Packers</span><div style="height:14px;border-radius:4px;background:#26262A;position:relative"><div class="bar" style="position:absolute;left:0;width:36%;height:14px;border-radius:4px;background:#6E6C66;transform-origin:left"></div></div></div>
+          </div>
+          <div id="inv" style="position:absolute;left:652px;top:318px;width:300px;height:76px;border-radius:9px;background:#1F1F23;color:#EDEDEA;padding:12px 14px;box-sizing:border-box;font-size:13px">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span>Invoice · Sarah Tan</span><span id="stamp" class="mono" style="font-size:10px;color:#fff;background:#2F4BFF;border-radius:5px;padding:2px 7px;display:inline-block">SENT</span></div>
+            <div class="mono" style="font-size:10px;color:#8A8882;margin-top:10px">→ accounting synced ✓ · reminder set</div>
+          </div>
+          <div id="phone" style="position:absolute;left:968px;top:200px;width:132px;height:250px;border-radius:26px;background:#FBFAF7;border:5px solid #121214;box-sizing:border-box;padding:16px 10px;display:flex;flex-direction:column;gap:7px;font-size:10.5px;box-shadow:0 30px 50px rgba(18,18,20,.3)">
+            <div class="mono" style="font-size:8.5px;color:#8A8882">Job · 12 Dec</div>
+            <div class="tick" style="display:flex;gap:5px"><span style="color:#2F4BFF;font-weight:700">✓</span>Arrived</div>
+            <div class="tick" style="display:flex;gap:5px"><span style="color:#2F4BFF;font-weight:700">✓</span>Before photos</div>
+            <div class="tick" style="display:flex;gap:5px"><span style="color:#2F4BFF;font-weight:700">✓</span>Items loaded</div>
+            <div class="tick" style="display:flex;gap:5px"><span style="color:#2F4BFF;font-weight:700">✓</span>Customer signed</div>
+          </div>
+
+          <div id="sdot" style="position:absolute;left:0;top:0;z-index:6;pointer-events:none">
+            <span id="stageDot" style="position:absolute;left:-7px;top:-7px;width:14px;height:14px;border-radius:50%;background:#2F4BFF;animation:pulse 1.4s infinite"></span>
+            <span class="mono" style="position:absolute;left:14px;top:-10px;background:#121214;color:#fff;border-radius:6px;padding:3px 8px;white-space:nowrap" id="dotLbl">search</span>
+          </div>
+          <a id="cta" class="pill mag" href="#contact" style="position:absolute;left:430px;top:432px;display:flex;align-items:center;gap:12px;background:#2F4BFF;color:#fff;padding:8px 8px 8px 22px;border-radius:999px;font-weight:600">Map your business <span class="ar" style="width:32px;height:32px;border-radius:50%;background:#fff;color:#2F4BFF;display:flex;align-items:center;justify-content:center">↗</span></a>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px">
+        <div style="position:relative;height:96px;flex:1;max-width:460px">
+          <div class="cap" style="opacity:1;filter:blur(0px);transform:translateY(0px)">
+              <div class="mono" style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#2F4BFF">01</span><span style="width:24px;border-top:1px solid #B9B7B0"></span><span style="color:#8A8882">08</span></div>
+              <div style="font-size:26px;font-weight:600;letter-spacing:-.035em">Someone finds you</div>
+              <div style="font-size:15px;color:#5A5853;margin-top:4px">They search and your site shows up, fast and clear.</div>
+            </div>
+            <div class="cap" style="opacity:0;filter:blur(8px);transform:translateY(12px)">
+              <div class="mono" style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#2F4BFF">02</span><span style="width:24px;border-top:1px solid #B9B7B0"></span><span style="color:#8A8882">08</span></div>
+              <div style="font-size:26px;font-weight:600;letter-spacing:-.035em">They ask for a quote</div>
+              <div style="font-size:15px;color:#5A5853;margin-top:4px">A short form on their phone. No phone tag.</div>
+            </div>
+            <div class="cap" style="opacity:0;filter:blur(8px);transform:translateY(12px)">
+              <div class="mono" style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#2F4BFF">03</span><span style="width:24px;border-top:1px solid #B9B7B0"></span><span style="color:#8A8882">08</span></div>
+              <div style="font-size:26px;font-weight:600;letter-spacing:-.035em">The quote writes itself</div>
+              <div style="font-size:15px;color:#5A5853;margin-top:4px">Your system prices it from your rules and sends it.</div>
+            </div>
+            <div class="cap" style="opacity:0;filter:blur(8px);transform:translateY(12px)">
+              <div class="mono" style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#2F4BFF">04</span><span style="width:24px;border-top:1px solid #B9B7B0"></span><span style="color:#8A8882">08</span></div>
+              <div style="font-size:26px;font-weight:600;letter-spacing:-.035em">They book a date</div>
+              <div style="font-size:15px;color:#5A5853;margin-top:4px">Only free dates show. Deposit paid online.</div>
+            </div>
+            <div class="cap" style="opacity:0;filter:blur(8px);transform:translateY(12px)">
+              <div class="mono" style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#2F4BFF">05</span><span style="width:24px;border-top:1px solid #B9B7B0"></span><span style="color:#8A8882">08</span></div>
+              <div style="font-size:26px;font-weight:600;letter-spacing:-.035em">The job gets planned</div>
+              <div style="font-size:15px;color:#5A5853;margin-top:4px">Crew, lorry and time slot — no double bookings.</div>
+            </div>
+            <div class="cap" style="opacity:0;filter:blur(8px);transform:translateY(12px)">
+              <div class="mono" style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#2F4BFF">06</span><span style="width:24px;border-top:1px solid #B9B7B0"></span><span style="color:#8A8882">08</span></div>
+              <div style="font-size:26px;font-weight:600;letter-spacing:-.035em">Your team does the work</div>
+              <div style="font-size:15px;color:#5A5853;margin-top:4px">Checklist and sign-off on their phone.</div>
+            </div>
+            <div class="cap" style="opacity:0;filter:blur(8px);transform:translateY(12px)">
+              <div class="mono" style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#2F4BFF">07</span><span style="width:24px;border-top:1px solid #B9B7B0"></span><span style="color:#8A8882">08</span></div>
+              <div style="font-size:26px;font-weight:600;letter-spacing:-.035em">The invoice sends itself</div>
+              <div style="font-size:15px;color:#5A5853;margin-top:4px">Straight into your accounting. Reminders if unpaid.</div>
+            </div>
+            <div class="cap" style="opacity:0;filter:blur(8px);transform:translateY(12px)">
+              <div class="mono" style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#2F4BFF">08</span><span style="width:24px;border-top:1px solid #B9B7B0"></span><span style="color:#8A8882">08</span></div>
+              <div style="font-size:26px;font-weight:600;letter-spacing:-.035em">Your turn</div>
+              <div style="font-size:15px;color:#5A5853;margin-top:4px">One enquiry, start to finish, nothing typed twice.</div>
+            </div>
+        </div>
+        <div style="display:flex;gap:6px">
+          <button class="pip" data-k="0" aria-label="Go to step 1" style="width:26px;height:6px;border:0;border-radius:3px;background:#2F4BFF;cursor:pointer;padding:0;transition:width .4s,background .4s"></button><button class="pip" data-k="1" aria-label="Go to step 2" style="width:8px;height:6px;border:0;border-radius:3px;background:#D2D0C9;cursor:pointer;padding:0;transition:width .4s,background .4s"></button><button class="pip" data-k="2" aria-label="Go to step 3" style="width:8px;height:6px;border:0;border-radius:3px;background:#D2D0C9;cursor:pointer;padding:0;transition:width .4s,background .4s"></button><button class="pip" data-k="3" aria-label="Go to step 4" style="width:8px;height:6px;border:0;border-radius:3px;background:#D2D0C9;cursor:pointer;padding:0;transition:width .4s,background .4s"></button><button class="pip" data-k="4" aria-label="Go to step 5" style="width:8px;height:6px;border:0;border-radius:3px;background:#D2D0C9;cursor:pointer;padding:0;transition:width .4s,background .4s"></button><button class="pip" data-k="5" aria-label="Go to step 6" style="width:8px;height:6px;border:0;border-radius:3px;background:#D2D0C9;cursor:pointer;padding:0;transition:width .4s,background .4s"></button><button class="pip" data-k="6" aria-label="Go to step 7" style="width:8px;height:6px;border:0;border-radius:3px;background:#D2D0C9;cursor:pointer;padding:0;transition:width .4s,background .4s"></button><button class="pip" data-k="7" aria-label="Go to step 8" style="width:8px;height:6px;border:0;border-radius:3px;background:#D2D0C9;cursor:pointer;padding:0;transition:width .4s,background .4s"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRIES ===== -->
+<section id="industries" style="max-width:1360px;margin:0 auto;padding:120px clamp(20px,4vw,56px) 0;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px">
+    <div><div class="mono rv" style="color:#8A8882;margin-bottom:12px">Industries</div><h2 class="mh" style="margin:0;font-size:clamp(40px,5vw,72px);line-height:.95;letter-spacing:-.055em;font-weight:600"><span class="ln"><span class="lni">Built for businesses</span></span><span class="ln"><span class="lni" style="color:#A8A69F">that run on bookings.</span></span></h2></div>
+    <p class="rv" style="margin:0;max-width:38ch;color:#5A5853;font-size:17px;line-height:1.5">The same solid core — quotes, bookings, jobs, invoices — shaped around how your trade actually works.</p>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:28px 40px;align-items:stretch">
+    <div class="rv" style="flex:1 1 340px;display:flex;flex-direction:column;border-top:1px solid #121214">
+      <button class="indrow on" data-k="0"><span class="mono num">01</span><span class="nm">Moving &amp; relocation</span><span class="mono tag">Our home turf</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="1"><span class="mono num">02</span><span class="nm">Cleaning</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="2"><span class="mono num">03</span><span class="nm">Aircon servicing</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="3"><span class="mono num">04</span><span class="nm">Renovation &amp; interiors</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="4"><span class="mono num">05</span><span class="nm">Pest control</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="5"><span class="mono num">06</span><span class="nm">Self-storage</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="6"><span class="mono num">07</span><span class="nm">Logistics &amp; delivery</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="7"><span class="mono num">08</span><span class="nm">Tuition &amp; enrichment</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="8"><span class="mono num">09</span><span class="nm">Beauty &amp; wellness salons</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="9"><span class="mono num">10</span><span class="nm">Clinics — aesthetic &amp; dental</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="10"><span class="mono num">11</span><span class="nm">Car workshops &amp; detailing</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="11"><span class="mono num">12</span><span class="nm">Events &amp; catering</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="12"><span class="mono num">13</span><span class="nm">Laundry services</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="13"><span class="mono num">14</span><span class="nm">Handyman &amp; facility maintenance</span><span class="ia" aria-hidden="true">→</span></button>
+      <button class="indrow" data-k="14"><span class="mono num">15</span><span class="nm">Property management</span><span class="ia" aria-hidden="true">→</span></button>
+    </div>
+    <div id="indPanel" class="rv tg" style="flex:1.35 1 520px;min-width:0;position:relative;background:#fff;border:1px solid #E2E0D9;border-radius:24px;padding:34px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px;box-shadow:0 40px 80px rgba(18,18,20,.06)">
+      <span class="anno mono" style="right:24px;top:-12px">same core system · tuned per trade</span>
+      <div class="ip" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px">
+        <div><div class="mono" style="color:#8A8882"><span id="indN">01</span> / 15</div><div style="font-size:clamp(32px,3.4vw,46px);line-height:1;letter-spacing:-.05em;font-weight:600;margin-top:10px" id="indName">Moving &amp; relocation</div></div>
+        <div style="font-size:84px;line-height:.8;letter-spacing:-.06em;font-weight:600;color:#EDECE7" id="indBig">01</div>
+      </div>
+      <div class="ip" style="display:flex;gap:12px;align-items:flex-start;background:#F4F4F1;border-radius:12px;padding:14px 16px"><span class="mono" style="color:#C24A3A;white-space:nowrap;padding-top:2px">Today</span><span style="font-size:16px;line-height:1.45;color:#3D3C38" id="indPain">Quotes over WhatsApp, crews on a whiteboard, deposits chased by phone.</span></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+        <div class="ip" style="border:1px solid #E2E0D9;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px">
+          <div class="mono" style="display:flex;align-items:center;gap:8px"><span style="width:8px;height:8px;border-radius:50%;border:1.5px solid #121214"></span>FRONT · website</div>
+          <div id="indFront" style="display:flex;flex-direction:column;gap:10px"><div style="display:flex;gap:10px;font-size:15px;line-height:1.35"><span style="color:#2F4BFF">✓</span>Instant quote by home size</div><div style="display:flex;gap:10px;font-size:15px;line-height:1.35"><span style="color:#2F4BFF">✓</span>Photo upload for big items</div><div style="display:flex;gap:10px;font-size:15px;line-height:1.35"><span style="color:#2F4BFF">✓</span>Pick a moving date online</div></div>
+        </div>
+        <div class="ip" style="background:#141416;color:#EDEDEA;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px">
+          <div class="mono" style="display:flex;align-items:center;gap:8px;color:#B9B7B0"><span style="width:8px;height:8px;border-radius:50%;background:#2F4BFF"></span>BACK · system</div>
+          <div id="indBack" style="display:flex;flex-direction:column;gap:10px"><div style="display:flex;gap:10px;font-size:15px;line-height:1.35"><span style="color:#8EA0FF">✓</span>Crew &amp; lorry scheduling</div><div style="display:flex;gap:10px;font-size:15px;line-height:1.35"><span style="color:#8EA0FF">✓</span>Packing &amp; inventory checklists</div><div style="display:flex;gap:10px;font-size:15px;line-height:1.35"><span style="color:#8EA0FF">✓</span>Deposit and final invoice, automatic</div></div>
+        </div>
+      </div>
+      <div class="ip" style="margin-top:auto;display:flex;flex-direction:column;gap:10px">
+        <div class="mono" style="color:#8A8882">Their flow, start to finish</div>
+        <div id="indFlow" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px"><span class="fc" style="display:inline-flex;align-items:center;gap:8px;background:#121214;color:#fff;border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:600">Enquiry</span><span class="fc" aria-hidden="true" style="width:22px;border-top:1.5px dashed #B9B7B0"></span><span class="fc" style="display:inline-flex;align-items:center;gap:8px;background:#EDECE7;color:#121214;border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:600">Survey</span><span class="fc" aria-hidden="true" style="width:22px;border-top:1.5px dashed #B9B7B0"></span><span class="fc" style="display:inline-flex;align-items:center;gap:8px;background:#EDECE7;color:#121214;border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:600">Move day</span><span class="fc" aria-hidden="true" style="width:22px;border-top:1.5px dashed #B9B7B0"></span><span class="fc" style="display:inline-flex;align-items:center;gap:8px;background:#2F4BFF;color:#fff;border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:600">Invoice</span></div>
+      </div>
+    </div>
+  </div>
+  <a class="rv" href="#contact" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid #D8D6CF;border-bottom:1px solid #D8D6CF;padding:20px 4px;font-size:17px"><span><span style="font-weight:600">Don't see your trade?</span> <span style="color:#5A5853">If your business runs on enquiries, bookings, jobs and invoices, we can build for it.</span></span><span class="mono" style="color:#2F4BFF">Tell us yours ↗</span></a>
+</section>
+
+<!-- ===== LOOK UNDERNEATH ===== -->
+<section id="underneath" style="max-width:1360px;margin:0 auto;padding:120px clamp(20px,4vw,56px) 40px;display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px">
+    <div><div class="mono rv" style="color:#8A8882;margin-bottom:12px">Look underneath</div><h2 class="mh" style="margin:0;font-size:clamp(40px,5vw,72px);line-height:.95;letter-spacing:-.055em;font-weight:600"><span class="ln"><span class="lni">Every button</span></span><span class="ln"><span class="lni">has a system behind it.</span></span></h2></div>
+    <p class="rv" style="margin:0;max-width:36ch;color:#5A5853;font-size:17px;line-height:1.5">Move over the website below. The lens shows what's really happening when a customer clicks.</p>
+  </div>
+  <div id="lens" class="rv" role="img" aria-label="A sample website; a lens reveals the business system underneath it." style="position:relative;height:540px;border-radius:22px;overflow:hidden;border:1px solid #D8D6CF;cursor:crosshair;box-shadow:0 40px 80px rgba(18,18,20,.08)">
+    <div style="position:absolute;inset:0;background:#FBFAF7;padding:28px 40px;display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:700;font-size:18px">yourcompany.</span><span style="display:flex;gap:22px;font-size:14px;color:#5A5853"><span>Services</span><span>Prices</span><span>About</span></span></div>
+      <div class="lsplit" style="display:flex;gap:40px;flex:1">
+        <div style="flex:1.1;display:flex;flex-direction:column;gap:20px;justify-content:center">
+          <div style="font-size:64px;line-height:.95;letter-spacing:-.05em;font-weight:700">Moving,<br>made simple.</div>
+          <div style="font-size:17px;color:#5A5853;max-width:34ch;line-height:1.5">Get a fixed price online in a minute. Book the date that suits you.</div>
+          <div style="display:flex;gap:10px"><span style="background:#121214;color:#fff;border-radius:999px;padding:14px 22px;font-weight:600">Get a quote</span><span style="border:1px solid #C9C7C0;border-radius:999px;padding:13px 22px;font-weight:600">Book a date</span></div>
+        </div>
+        <div style="flex:1;min-width:0;border-radius:18px;background:linear-gradient(160deg,#E9E8E3,#DCDAD3);padding:22px;display:flex;flex-direction:column;justify-content:space-between">
+          <div style="align-self:flex-start;background:#fff;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600">Fixed price · no hidden fees</div>
+          <div style="background:#fff;border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 20px 40px rgba(18,18,20,.08)">
+            <div style="font-weight:700;font-size:17px">Instant quote</div>
+            <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+              <div style="border:1px solid #E2E0D9;border-radius:8px;padding:9px 10px;font-size:13px;color:#5A5853">Moving from</div><div style="border:1px solid #E2E0D9;border-radius:8px;padding:9px 10px;font-size:13px;color:#5A5853">Moving to</div>
+              <div style="border:1px solid #E2E0D9;border-radius:8px;padding:9px 10px;font-size:13px;color:#5A5853">Home size</div><div style="border:1px solid #E2E0D9;border-radius:8px;padding:9px 10px;font-size:13px;color:#5A5853">Date</div>
+            </div>
+            <div style="background:#121214;color:#fff;border-radius:999px;padding:11px;text-align:center;font-weight:600;font-size:14px">See my price →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lensTop" style="position:absolute;inset:0;background:#141416;color:#EDEDEA;padding:28px 40px;display:flex;flex-direction:column;gap:40px;clip-path:circle(120px at 24% 40%)">
+      <div class="mono" style="display:flex;justify-content:space-between;align-items:center;color:#8A8882"><span>ops.yourcompany.com</span><span style="color:#8EA0FF">● live</span></div>
+      <div class="lsplit" style="display:flex;gap:40px;flex:1">
+        <div style="flex:1.1;display:flex;flex-direction:column;gap:12px;justify-content:center">
+          <div class="mono" style="color:#8A8882">When “Get a quote” is pressed</div>
+          <div style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>1 · Lead created</span><span class="mono" style="color:#8EA0FF">CRM</span></div>
+          <div style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>2 · Price worked out</span><span class="mono" style="color:#8EA0FF">your rules</span></div>
+          <div style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>3 · Quote sent</span><span class="mono" style="color:#8EA0FF">email · WhatsApp</span></div>
+          <div style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>4 · Follow-up booked</span><span class="mono" style="color:#8EA0FF">in 2 days if no reply</span></div>
+          <div class="mono" style="display:flex;gap:8px;align-items:center;color:#6E6C66;font-size:10px;margin-top:4px"><span style="width:6px;height:6px;border-radius:50%;background:#7EE0A4"></span>all 4 steps ran on their own · no one typed anything</div>
+        </div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:10px">
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+            <div style="background:#1F1F23;border-radius:10px;padding:10px 12px"><div class="mono" style="color:#8A8882;font-size:10px">Enquiries</div><div style="font-size:24px;font-weight:600;letter-spacing:-.03em;margin-top:2px">24</div><div class="mono" style="color:#8EA0FF;font-size:10px">↑ 6 vs last week</div></div>
+            <div style="background:#1F1F23;border-radius:10px;padding:10px 12px"><div class="mono" style="color:#8A8882;font-size:10px">Quotes sent</div><div style="font-size:24px;font-weight:600;letter-spacing:-.03em;margin-top:2px">19</div><div class="mono" style="color:#8EA0FF;font-size:10px">avg 4 min</div></div>
+            <div style="background:#1F1F23;border-radius:10px;padding:10px 12px"><div class="mono" style="color:#8A8882;font-size:10px">Booked</div><div style="font-size:24px;font-weight:600;letter-spacing:-.03em;margin-top:2px">S$18.4k</div><div class="mono" style="color:#8EA0FF;font-size:10px">11 jobs</div></div>
+          </div>
+          <div style="flex:1;min-height:0;background:#1F1F23;border-radius:12px;padding:10px 14px 6px;display:flex;flex-direction:column">
+            <div class="mono" style="display:flex;justify-content:space-between;color:#8A8882;font-size:10px"><span>This week · quotes vs booked</span><span style="display:flex;gap:10px"><span><span style="color:#55555C">■</span> quotes</span><span><span style="color:#2F4BFF">■</span> booked</span><span style="color:#8EA0FF">— revenue</span></span></div>
+            <svg viewBox="0 0 500 126" width="100%" height="126" preserveAspectRatio="none" aria-hidden="true" style="display:block;flex:1;min-height:120px;height:auto">
+              <g stroke="#2C2C31" stroke-width="1"><line x1="20" y1="20" x2="490" y2="20"></line><line x1="20" y1="53" x2="490" y2="53"></line><line x1="20" y1="87" x2="490" y2="87"></line><line x1="20" y1="120" x2="490" y2="120"></line></g>
+              <g fill="#3A3A40"><rect x="30" y="57.5" width="22" height="62.5" rx="3"></rect><rect x="98" y="32.5" width="22" height="87.5" rx="3"></rect><rect x="166" y="70" width="22" height="50" rx="3"></rect><rect x="234" y="20" width="22" height="100" rx="3"></rect><rect x="302" y="45" width="22" height="75" rx="3"></rect><rect x="370" y="82.5" width="22" height="37.5" rx="3"></rect><rect x="438" y="95" width="22" height="25" rx="3"></rect></g>
+              <g fill="#2F4BFF"><rect x="54" y="82.5" width="22" height="37.5" rx="3"></rect><rect x="122" y="70" width="22" height="50" rx="3"></rect><rect x="190" y="95" width="22" height="25" rx="3"></rect><rect x="258" y="57.5" width="22" height="62.5" rx="3"></rect><rect x="326" y="70" width="22" height="50" rx="3"></rect><rect x="394" y="95" width="22" height="25" rx="3"></rect><rect x="462" y="107.5" width="22" height="12.5" rx="3"></rect></g>
+              <polyline points="53,67 121,52 189,80 257,28 325,41 393,87 461,100" fill="none" stroke="#8EA0FF" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"></polyline>
+              <g fill="#141416" stroke="#8EA0FF" stroke-width="2"><circle cx="53" cy="67" r="3.5"></circle><circle cx="121" cy="52" r="3.5"></circle><circle cx="189" cy="80" r="3.5"></circle><circle cx="257" cy="28" r="3.5"></circle><circle cx="325" cy="41" r="3.5"></circle><circle cx="393" cy="87" r="3.5"></circle><circle cx="461" cy="100" r="3.5"></circle></g>
+              </svg>
+            <div class="mono" style="display:grid;grid-template-columns:repeat(7,minmax(0,1fr));padding:2px 2% 4px 4%;color:#6E6C66;font-size:10px;text-align:center"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+          </div>
+          <div style="background:#1F1F23;border-radius:12px;padding:6px 12px;display:flex;flex-direction:column;font-size:12.5px">
+            <div style="display:grid;grid-template-columns:52px 1fr 64px 78px;align-items:center;padding:7px 0;border-bottom:1px solid #2A2A2E"><span class="mono" style="color:#8A8882;font-size:10px">09:00</span><span>Tan · 4-room move</span><span class="mono" style="color:#8A8882;font-size:10px">Crew A</span><span class="mono" style="font-size:10px;background:#2F4BFF;color:#fff;border-radius:999px;padding:2px 8px;text-align:center">On site</span></div>
+            <div style="display:grid;grid-template-columns:52px 1fr 64px 78px;align-items:center;padding:7px 0;border-bottom:1px solid #2A2A2E"><span class="mono" style="color:#8A8882;font-size:10px">13:30</span><span>Lim · office move</span><span class="mono" style="color:#8A8882;font-size:10px">Crew B</span><span class="mono" style="font-size:10px;background:#2C2C31;color:#B9B7B0;border-radius:999px;padding:2px 8px;text-align:center">Scheduled</span></div>
+            <div style="display:grid;grid-template-columns:52px 1fr 64px 78px;align-items:center;padding:7px 0"><span class="mono" style="color:#8A8882;font-size:10px">16:00</span><span>Ong · storage pickup</span><span class="mono" style="color:#8A8882;font-size:10px">Lorry 2</span><span class="mono" style="font-size:10px;background:#1E3A2A;color:#7EE0A4;border-radius:999px;padding:2px 8px;text-align:center">Paid ✓</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lensRing" aria-hidden="true" style="position:absolute;left:24%;top:40%;width:252px;height:252px;margin:-126px 0 0 -126px;pointer-events:none">
+      <div class="ring" style="inset:0;-webkit-mask:radial-gradient(closest-side,transparent 92%,#000 93%);mask:radial-gradient(closest-side,transparent 92%,#000 93%)"></div>
+      <div class="mono" style="position:absolute;left:50%;bottom:-26px;transform:translateX(-50%);background:#121214;color:#fff;border-radius:6px;padding:3px 8px;white-space:nowrap">BACK</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATEMENT + PROMISES ===== -->
+<section style="max-width:1360px;margin:0 auto;padding:120px clamp(20px,4vw,56px) 88px;display:flex;flex-direction:column;gap:64px">
+  <p id="stmt" style="margin:0;font-size:clamp(34px,4vw,58px);line-height:1.06;letter-spacing:-.045em;font-weight:500;max-width:22ch"><span class="w">We </span><span class="w">build </span><span class="w">websites </span><span class="w">that </span><span class="w">win </span><span class="w">the </span><span class="w">customer </span><span class="w">and </span><span class="w">systems </span><span class="w">that </span><span class="w">keep </span><span class="w">the </span><span class="w">promise. </span><span class="w">Pretty </span><span class="w">on </span><span class="w">the </span><span class="w">outside, </span><span class="w">solid </span><span class="w">underneath. </span></p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px">
+    
+      <div class="rv" style="position:relative;padding-top:18px;display:flex;flex-direction:column;gap:10px"><span class="rl" style="position:absolute;left:0;right:0;top:0;height:1px;background:#C9C7C0;transform-origin:left"></span><span class="mono" style="color:#2F4BFF">01</span><span style="font-weight:600;font-size:18px">Built for your process.</span><span style="color:#5A5853;line-height:1.5;font-size:15px">Software that follows how your team already works, not the other way round.</span></div>
+    
+      <div class="rv" style="position:relative;padding-top:18px;display:flex;flex-direction:column;gap:10px"><span class="rl" style="position:absolute;left:0;right:0;top:0;height:1px;background:#C9C7C0;transform-origin:left"></span><span class="mono" style="color:#2F4BFF">02</span><span style="font-weight:600;font-size:18px">Fixed price, in writing.</span><span style="color:#5A5853;line-height:1.5;font-size:15px">You know the cost and the timeline before we start.</span></div>
+    
+      <div class="rv" style="position:relative;padding-top:18px;display:flex;flex-direction:column;gap:10px"><span class="rl" style="position:absolute;left:0;right:0;top:0;height:1px;background:#C9C7C0;transform-origin:left"></span><span class="mono" style="color:#2F4BFF">03</span><span style="font-weight:600;font-size:18px">We run businesses too.</span><span style="color:#5A5853;line-height:1.5;font-size:15px">Our own logistics companies run on what we build, so we design for real days.</span></div>
+    
+      <div class="rv" style="position:relative;padding-top:18px;display:flex;flex-direction:column;gap:10px"><span class="rl" style="position:absolute;left:0;right:0;top:0;height:1px;background:#C9C7C0;transform-origin:left"></span><span class="mono" style="color:#2F4BFF">04</span><span style="font-weight:600;font-size:18px">One team, start to finish.</span><span style="color:#5A5853;line-height:1.5;font-size:15px">The people who design it build it, and stay on after launch.</span></div>
+    
+  </div>
+</section>
+
+<!-- ===== PRICES ===== -->
+<section id="prices" style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px) 120px">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:28px">
+    <h2 class="mh" style="margin:0;font-size:clamp(40px,5vw,72px);line-height:.95;letter-spacing:-.055em;font-weight:600"><span class="ln"><span class="lni">What we build.</span></span></h2>
+    <span class="mono rv" style="color:#6E6C66">Prices in SGD · excl. GST</span>
+  </div>
+  <div id="priceList" style="position:relative">
+    <span class="rl" style="position:absolute;left:0;right:0;top:0;height:1px;background:#121214;transform-origin:left"></span>
+    
+      <a class="svc tg prow" href="#contact" style="position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px;padding:22px 8px">
+        <span class="mono" style="width:32px;color:#8A8882">01</span>
+        <span style="flex:1 1 300px;font-size:26px;font-weight:600;letter-spacing:-.03em">Marketing websites</span>
+        <span style="flex:1 1 260px;color:#5A5853">Fast, clear, built to bring in enquiries.</span>
+        <span style="display:flex;align-items:baseline;justify-content:flex-end;gap:18px;width:200px;flex-shrink:0;margin-left:auto;white-space:nowrap"><span class="mono">from S$[PRICE]</span><span class="ar" aria-hidden="true" style="color:#2F4BFF;display:inline-block">↗</span></span>
+        <span class="rl" style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#D8D6CF;transform-origin:left"></span>
+        <span class="anno mono" style="right:40px;top:-11px">front · pages + forms</span>
+      </a>
+    
+      <a class="svc tg prow" href="#contact" style="position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px;padding:22px 8px">
+        <span class="mono" style="width:32px;color:#8A8882">02</span>
+        <span style="flex:1 1 300px;font-size:26px;font-weight:600;letter-spacing:-.03em">Quote &amp; booking systems</span>
+        <span style="flex:1 1 260px;color:#5A5853">Customers quote and book themselves, online.</span>
+        <span style="display:flex;align-items:baseline;justify-content:flex-end;gap:18px;width:200px;flex-shrink:0;margin-left:auto;white-space:nowrap"><span class="mono">from S$[PRICE]</span><span class="ar" aria-hidden="true" style="color:#2F4BFF;display:inline-block">↗</span></span>
+        <span class="rl" style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#D8D6CF;transform-origin:left"></span>
+        <span class="anno mono" style="right:40px;top:-11px">front → back · pricing rules</span>
+      </a>
+    
+      <a class="svc tg prow" href="#contact" style="position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px;padding:22px 8px">
+        <span class="mono" style="width:32px;color:#8A8882">03</span>
+        <span style="flex:1 1 300px;font-size:26px;font-weight:600;letter-spacing:-.03em">Operations dashboards</span>
+        <span style="flex:1 1 260px;color:#5A5853">Jobs, staff and stock on one screen.</span>
+        <span style="display:flex;align-items:baseline;justify-content:flex-end;gap:18px;width:200px;flex-shrink:0;margin-left:auto;white-space:nowrap"><span class="mono">on request</span><span class="ar" aria-hidden="true" style="color:#2F4BFF;display:inline-block">↗</span></span>
+        <span class="rl" style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#D8D6CF;transform-origin:left"></span>
+        <span class="anno mono" style="right:40px;top:-11px">back · your daily screen</span>
+      </a>
+    
+      <a class="svc tg prow" href="#contact" style="position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px;padding:22px 8px">
+        <span class="mono" style="width:32px;color:#8A8882">04</span>
+        <span style="flex:1 1 300px;font-size:26px;font-weight:600;letter-spacing:-.03em">Automations &amp; integrations</span>
+        <span style="flex:1 1 260px;color:#5A5853">Connect your tools so nothing is typed twice.</span>
+        <span style="display:flex;align-items:baseline;justify-content:flex-end;gap:18px;width:200px;flex-shrink:0;margin-left:auto;white-space:nowrap"><span class="mono">from S$[PRICE]</span><span class="ar" aria-hidden="true" style="color:#2F4BFF;display:inline-block">↗</span></span>
+        <span class="rl" style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#D8D6CF;transform-origin:left"></span>
+        <span class="anno mono" style="right:40px;top:-11px">back · the wiring</span>
+      </a>
+    
+      <a class="svc tg prow" href="#contact" style="position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px;padding:22px 8px">
+        <span class="mono" style="width:32px;color:#8A8882">05</span>
+        <span style="flex:1 1 300px;font-size:26px;font-weight:600;letter-spacing:-.03em">AI tools</span>
+        <span style="flex:1 1 260px;color:#5A5853">Estimates from photos, smart replies, summaries.</span>
+        <span style="display:flex;align-items:baseline;justify-content:flex-end;gap:18px;width:200px;flex-shrink:0;margin-left:auto;white-space:nowrap"><span class="mono">on request</span><span class="ar" aria-hidden="true" style="color:#2F4BFF;display:inline-block">↗</span></span>
+        <span class="rl" style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#D8D6CF;transform-origin:left"></span>
+        <span class="anno mono" style="right:40px;top:-11px">back · assistants</span>
+      </a>
+    
+      <a class="svc tg prow" href="#contact" style="position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px;padding:22px 8px">
+        <span class="mono" style="width:32px;color:#8A8882">06</span>
+        <span style="flex:1 1 300px;font-size:26px;font-weight:600;letter-spacing:-.03em">Hosting &amp; care</span>
+        <span style="flex:1 1 260px;color:#5A5853">It just runs. And if not, you call us.</span>
+        <span style="display:flex;align-items:baseline;justify-content:flex-end;gap:18px;width:200px;flex-shrink:0;margin-left:auto;white-space:nowrap"><span class="mono">S$[PRICE] / month</span><span class="ar" aria-hidden="true" style="color:#2F4BFF;display:inline-block">↗</span></span>
+        <span class="rl" style="position:absolute;left:0;right:0;bottom:0;height:1px;background:#D8D6CF;transform-origin:left"></span>
+        <span class="anno mono" style="right:40px;top:-11px">both · kept running</span>
+      </a>
+    
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section id="contact" style="position:relative">
+  <div id="ctaCard" style="background:#121214;color:#F4F4F1">
+    <div style="max-width:1360px;margin:0 auto;padding:112px clamp(20px,4vw,56px) 96px;display:flex;flex-direction:column;gap:72px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:40px">
+        <h2 class="mh" style="margin:0;font-size:clamp(52px,7vw,108px);line-height:.94;letter-spacing:-.06em;font-weight:600;max-width:12ch"><span class="ln"><span class="lni">Tell us what</span></span><span class="ln"><span class="lni">slows you down.</span></span></h2>
+        <div class="rv" style="display:flex;flex-direction:column;gap:20px;max-width:380px;position:relative">
+          <p style="margin:0;font-size:18px;line-height:1.5;color:#B9B7B0;font-weight:300">A free 30-minute call. Then a written plan with a fixed price and timeline — no strings attached.</p>
+          <a class="pill tg mag" href="#contact" style="align-self:flex-start;display:flex;align-items:center;gap:12px;background:#F4F4F1;color:#121214;padding:8px 8px 8px 22px;border-radius:999px;font-weight:600">Book a call <span class="ar" style="width:36px;height:36px;border-radius:50%;background:#2F4BFF;display:flex;align-items:center;justify-content:center;color:#fff">↗</span></a>
+          <span class="anno mono" style="left:0;bottom:-30px">→ books straight into our calendar</span>
+        </div>
+      </div>
+      <div class="mono" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:#8A8882;border-top:1px solid #2C2C2E;padding-top:20px"><span>© 2026 Cre8tive Solutions · Singapore</span><span>[hello@yourdomain.com]</span></div>
+    </div>
+  </div>
+</section>
+
+</div>
+<script src="assets/gsap.min.js"></script>
+<script src="assets/ScrollTrigger.min.js"></script>
+<script>window.SITE_DATA = {"caps": [["Someone finds you", "They search and your site shows up, fast and clear."], ["They ask for a quote", "A short form on their phone. No phone tag."], ["The quote writes itself", "Your system prices it from your rules and sends it."], ["They book a date", "Only free dates show. Deposit paid online."], ["The job gets planned", "Crew, lorry and time slot — no double bookings."], ["Your team does the work", "Checklist and sign-off on their phone."], ["The invoice sends itself", "Straight into your accounting. Reminders if unpaid."], ["Your turn", "One enquiry, start to finish, nothing typed twice."]], "dot": ["search", "form · creates a lead", "quote · auto-priced", "date picked", "crew + lorry assigned", "job sheet", "invoice → accounting", "yours next"], "log": ["New enquiry · Sarah T.", "Quote sent · 4-room move", "Job scheduled · Fri 9am", "Invoice paid · synced", "Review request sent"], "ind": [["Moving & relocation", "Our home turf", "Quotes over WhatsApp, crews on a whiteboard, deposits chased by phone.", ["Instant quote by home size", "Photo upload for big items", "Pick a moving date online"], ["Crew & lorry scheduling", "Packing & inventory checklists", "Deposit and final invoice, automatic"], ["Enquiry", "Survey", "Move day", "Invoice"]], ["Cleaning", "", "Recurring bookings tracked in a spreadsheet, rosters by text message.", ["Book a one-off or weekly clean", "Choose add-ons, see the price", "Pay online"], ["Cleaner rosters", "Photo checklists per job", "Repeat invoices that send themselves"], ["Book", "Assign", "Clean", "Rebook"]], ["Aircon servicing", "", "Customers forget to book, so the calendar goes quiet between seasons.", ["Book by number of units", "Choose a time slot", "Service history for each customer"], ["Reminders every 3 months", "Technician routes by area", "Job reports with photos"], ["Book", "Service", "Report", "Remind"]], ["Renovation & interiors", "", "Quotes, changes and progress payments spread across five places.", ["Portfolio by home type", "Enquiry with floor-plan upload", "Book a site visit"], ["Project timeline by trade", "Progress-payment billing", "Subcontractor schedule"], ["Enquiry", "Site visit", "Build", "Handover"]], ["Pest control", "", "Treatment reports written by hand, contract visits easy to miss.", ["Book a treatment", "Commercial contract enquiry", "Clear what-to-expect guide"], ["Digital treatment reports", "Recurring contract visits", "Chemical usage logs"], ["Book", "Treat", "Report", "Revisit"]], ["Self-storage", "", "Which units are free lives in someone’s head — or a spreadsheet.", ["Unit sizes and prices", "Book and pay online", "Optional pickup service"], ["Live unit availability", "Monthly billing on autopilot", "Move-in and access records"], ["Choose unit", "Pay", "Move in", "Bill monthly"]], ["Logistics & delivery", "", "Drivers call in after every drop, proof of delivery lost in chats.", ["Book a delivery", "Live tracking page", "Proof of delivery for customers"], ["Dispatch board", "Driver app with photo sign-off", "Rates and invoicing"], ["Book", "Dispatch", "Deliver", "Invoice"]], ["Tuition & enrichment", "", "Attendance on paper, term fees chased by message.", ["Class timetable", "Trial-class sign-up", "Parent portal"], ["Attendance tracking", "Term-fee billing", "Updates to parents"], ["Trial", "Enrol", "Attend", "Renew"]], ["Beauty & wellness salons", "", "Appointments in a paper diary, and no-shows with no deposit taken.", ["Book a treatment and therapist", "Packages and gift cards", "Deposit to secure the slot"], ["Therapist calendars", "Package balances per client", "Reminders that cut no-shows"], ["Book", "Remind", "Treat", "Rebook"]], ["Clinics — aesthetic & dental", "", "Bookings by phone, forms on clipboards, follow-ups forgotten.", ["Online booking by treatment", "Forms filled before the visit", "Clear prices and FAQs"], ["Doctor and room scheduling", "Visit records in one place", "Recall reminders"], ["Book", "Forms", "Visit", "Recall"]], ["Car workshops & detailing", "", "Job cards on paper, customers calling to ask “is it ready yet?”", ["Book a service or detail", "Choose a package", "Live “car ready” updates"], ["Digital job cards with photos", "Parts and labour quotes", "Service reminders by date or mileage"], ["Book", "Inspect", "Work", "Collect"]], ["Events & catering", "", "Every quote rebuilt from scratch, menus and headcounts lost in email threads.", ["Package builder with live price", "Date availability check", "Menu and add-on choices"], ["Event timeline and staff roster", "Headcount and menu changes", "Deposits and final billing"], ["Enquire", "Plan", "Event day", "Invoice"]], ["Laundry services", "", "Pickup slots and orders tracked through chat messages.", ["Schedule pickup and delivery", "Price list by item or kg", "Track order status"], ["Driver pickup routes", "Order tags and status board", "Subscriptions and billing"], ["Pickup", "Wash", "Deliver", "Bill"]], ["Handyman & facility maintenance", "", "Jobs arrive by call, WhatsApp and email — and some slip through.", ["Request a job with photos", "Upfront call-out price", "Pick a time window"], ["Job queue by urgency", "Technician app with sign-off", "Contract clients billed monthly"], ["Request", "Assign", "Fix", "Invoice"]], ["Property management", "", "Tenant requests, inspections and rent kept in separate spreadsheets.", ["Tenant request portal", "Pages for vacant units", "Owner reports online"], ["Maintenance tickets", "Inspection checklists with photos", "Rent and fee records"], ["Request", "Inspect", "Repair", "Report"]]], "accent": "#2F4BFF"};</script>
+<script src="assets/site.js"></script>
+</body>
+</html>
