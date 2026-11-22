@@ -152,8 +152,8 @@
   gsap.to('#eScroll', { yPercent: -22, rotation: 16, scale: 0.72, ease: 'none', scrollTrigger: heroST });
   gsap.to('.hl1 .lni, .hl2 .lni', { xPercent: -6, ease: 'none', scrollTrigger: heroST });
   gsap.to('.hl3 .lni, .hl4 .lni', { xPercent: 6, ease: 'none', scrollTrigger: heroST });
-    ['#heroP', '#heroBtns'].forEach(function (sel) {
-        gsap.fromTo(sel, { y: 0, opacity: 1 }, { y: -30, opacity: 0.25, ease: 'none', immediateRender: false, scrollTrigger: { trigger: sel, start: 'top 22%', end: 'bottom top', scrub: 0.6 } });
+  ['#heroP', '#heroBtns'].forEach(function (sel) {
+    gsap.fromTo(sel, { y: 0, opacity: 1 }, { y: -30, opacity: 0.25, ease: 'none', immediateRender: false, scrollTrigger: { trigger: sel, start: 'top 22%', end: 'bottom top', scrub: 0.6 } });
   });
 
   // 3. 3D tilt on the 8 (mouse only)
@@ -237,24 +237,34 @@
   // 8. closing card expands
   gsap.fromTo('#ctaCard', { clipPath: 'inset(8% 4% 0% 4% round 40px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', ease: 'none', scrollTrigger: { trigger: '#contact', start: 'top bottom', end: 'top 25%', scrub: 0.6 } });
 
-  // 9. the lens
+  // 9. the lens — follows the mouse, or a finger on phones (tap or drag sideways)
   var box = $('#lens'), top = box.querySelector('.lensTop'), ring = box.querySelector('.lensRing');
+  var R = function () { return box.clientWidth < 600 ? 92 : 120; };
   gsap.set(ring, { left: 0, top: 0, margin: 0 });
-  var L = { x: box.clientWidth * 0.24, y: box.clientHeight * 0.4, r: 120 };
+  var L = { x: box.clientWidth * 0.3, y: box.clientHeight * 0.45, r: R() };
   function render() { top.style.clipPath = 'circle(' + L.r + 'px at ' + L.x + 'px ' + L.y + 'px)'; gsap.set(ring, { x: L.x - 126, y: L.y - 126, scale: L.r / 120 }); }
   function makeIdle() {
     var w = box.clientWidth, h = box.clientHeight;
     return gsap.timeline({ repeat: -1, onUpdate: render, defaults: { duration: 3.2, ease: 'sine.inOut' } })
-      .to(L, { x: w * 0.7, y: h * 0.32 }).to(L, { x: w * 0.55, y: h * 0.7 }).to(L, { x: w * 0.24, y: h * 0.4 });
+      .to(L, { x: w * 0.7, y: h * 0.32 }).to(L, { x: w * 0.5, y: h * 0.72 }).to(L, { x: w * 0.3, y: h * 0.45 });
   }
   render();
-  var idle = makeIdle();
-  box.addEventListener('mousemove', function (e) {
-    var r = box.getBoundingClientRect(); idle.pause();
-    gsap.to(L, { x: e.clientX - r.left, y: e.clientY - r.top, r: 135, duration: 0.7, ease: 'power3.out', overwrite: true, onUpdate: render });
-  });
-  box.addEventListener('mouseleave', function () { gsap.to(L, { r: 120, duration: 0.5, onUpdate: render }); idle.kill(); idle = makeIdle(); });
-  addEventListener('resize', function () { idle.kill(); idle = makeIdle(); });
+  var idle = makeIdle(), resumeT = 0;
+  function moveTo(e, big) {
+    var r = box.getBoundingClientRect();
+    idle.pause(); clearTimeout(resumeT);
+    gsap.to(L, { x: e.clientX - r.left, y: e.clientY - r.top, r: R() * (big ? 1.12 : 1), duration: 0.6, ease: 'power3.out', overwrite: true, onUpdate: render });
+  }
+  function release(delay) {
+    clearTimeout(resumeT);
+    resumeT = setTimeout(function () { gsap.to(L, { r: R(), duration: 0.5, onUpdate: render }); idle.kill(); idle = makeIdle(); }, delay);
+  }
+  box.addEventListener('pointerdown', function (e) { moveTo(e, true); });
+  box.addEventListener('pointermove', function (e) { if (e.pointerType === 'mouse' || e.buttons) moveTo(e, true); });
+  box.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') release(0); });
+  box.addEventListener('pointerup', function (e) { if (e.pointerType !== 'mouse') release(3500); });
+  box.addEventListener('pointercancel', function () { release(3500); });
+  addEventListener('resize', function () { L.r = R(); idle.kill(); idle = makeIdle(); });
 
   addEventListener('load', function () { ScrollTrigger.refresh(); tick(); });
 })();

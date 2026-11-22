@@ -45,8 +45,13 @@ body{margin:0;background:#F4F4F1}a{color:#121214;text-decoration:none}button{fon
 #flow{overflow-x:clip}html,body{overflow-x:clip}
 @media (max-width:760px){
   header nav a.nv[href="#flow"],header nav a.nv[href="#prices"]{display:none}
-  #lens{height:460px!important}#lens .lsplit>div:last-child{display:none}
-  #lens .lensTop,#lens>div:first-child{padding:22px!important}
+  #lens{height:480px!important;touch-action:pan-y}#lens .lsplit>div:last-child{display:none!important}#lens>div:first-child>div:first-child>span:last-child{display:none!important}
+  #lens>div,#lens .lensTop{padding:20px!important;gap:18px!important}
+  #lens .lsplit{gap:16px!important}#lens .lsplit>div:first-child{gap:12px!important}
+  #lens .lhd{font-size:42px!important}#lens .lsub{font-size:15px!important}
+  #lens .lbtns span{padding:10px 16px!important;font-size:14px!important;white-space:nowrap}
+  #lens .lrow{padding:10px 12px!important;font-size:14px!important}
+  #lens .lrow .mono{font-size:10px}
   #toast,#rail,.elab{display:none!important}
   #industries .indrow .nm{font-size:16px}
   #indPanel{padding:22px!important}
@@ -311,16 +316,16 @@ body{margin:0;background:#F4F4F1}a{color:#121214;text-decoration:none}button{fon
 <section id="underneath" style="max-width:1360px;margin:0 auto;padding:120px clamp(20px,4vw,56px) 40px;display:flex;flex-direction:column;gap:32px">
   <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px">
     <div><div class="mono rv" style="color:#8A8882;margin-bottom:12px">Look underneath</div><h2 class="mh" style="margin:0;font-size:clamp(40px,5vw,72px);line-height:.95;letter-spacing:-.055em;font-weight:600"><span class="ln"><span class="lni">Every button</span></span><span class="ln"><span class="lni">has a system behind it.</span></span></h2></div>
-    <p class="rv" style="margin:0;max-width:36ch;color:#5A5853;font-size:17px;line-height:1.5">Move over the website below. The lens shows what's really happening when a customer clicks.</p>
+    <p class="rv" style="margin:0;max-width:36ch;color:#5A5853;font-size:17px;line-height:1.5">Move over the website below — or tap it on your phone. The lens shows what's really happening when a customer clicks.</p>
   </div>
   <div id="lens" class="rv" role="img" aria-label="A sample website; a lens reveals the business system underneath it." style="position:relative;height:540px;border-radius:22px;overflow:hidden;border:1px solid #D8D6CF;cursor:crosshair;box-shadow:0 40px 80px rgba(18,18,20,.08)">
     <div style="position:absolute;inset:0;background:#FBFAF7;padding:28px 40px;display:flex;flex-direction:column;gap:40px">
       <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:700;font-size:18px">yourcompany.</span><span style="display:flex;gap:22px;font-size:14px;color:#5A5853"><span>Services</span><span>Prices</span><span>About</span></span></div>
       <div class="lsplit" style="display:flex;gap:40px;flex:1">
         <div style="flex:1.1;display:flex;flex-direction:column;gap:20px;justify-content:center">
-          <div style="font-size:64px;line-height:.95;letter-spacing:-.05em;font-weight:700">Moving,<br>made simple.</div>
-          <div style="font-size:17px;color:#5A5853;max-width:34ch;line-height:1.5">Get a fixed price online in a minute. Book the date that suits you.</div>
-          <div style="display:flex;gap:10px"><span style="background:#121214;color:#fff;border-radius:999px;padding:14px 22px;font-weight:600">Get a quote</span><span style="border:1px solid #C9C7C0;border-radius:999px;padding:13px 22px;font-weight:600">Book a date</span></div>
+          <div class="lhd" style="font-size:64px;line-height:.95;letter-spacing:-.05em;font-weight:700">Moving,<br>made simple.</div>
+          <div class="lsub" style="font-size:17px;color:#5A5853;max-width:34ch;line-height:1.5">Get a fixed price online in a minute. Book the date that suits you.</div>
+          <div class="lbtns" style="display:flex;gap:10px"><span style="background:#121214;color:#fff;border-radius:999px;padding:14px 22px;font-weight:600">Get a quote</span><span style="border:1px solid #C9C7C0;border-radius:999px;padding:13px 22px;font-weight:600">Book a date</span></div>
         </div>
         <div style="flex:1;min-width:0;border-radius:18px;background:linear-gradient(160deg,#E9E8E3,#DCDAD3);padding:22px;display:flex;flex-direction:column;justify-content:space-between">
           <div style="align-self:flex-start;background:#fff;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600">Fixed price · no hidden fees</div>
@@ -340,10 +345,10 @@ body{margin:0;background:#F4F4F1}a{color:#121214;text-decoration:none}button{fon
       <div class="lsplit" style="display:flex;gap:40px;flex:1">
         <div style="flex:1.1;display:flex;flex-direction:column;gap:12px;justify-content:center">
           <div class="mono" style="color:#8A8882">When “Get a quote” is pressed</div>
-          <div style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>1 · Lead created</span><span class="mono" style="color:#8EA0FF">CRM</span></div>
-          <div style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>2 · Price worked out</span><span class="mono" style="color:#8EA0FF">your rules</span></div>
-          <div style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>3 · Quote sent</span><span class="mono" style="color:#8EA0FF">email · WhatsApp</span></div>
-          <div style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>4 · Follow-up booked</span><span class="mono" style="color:#8EA0FF">in 2 days if no reply</span></div>
+          <div class="lrow" style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>1 · Lead created</span><span class="mono" style="color:#8EA0FF">CRM</span></div>
+          <div class="lrow" style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>2 · Price worked out</span><span class="mono" style="color:#8EA0FF">your rules</span></div>
+          <div class="lrow" style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>3 · Quote sent</span><span class="mono" style="color:#8EA0FF">email · WhatsApp</span></div>
+          <div class="lrow" style="display:flex;justify-content:space-between;background:#1F1F23;border-radius:10px;padding:14px 16px"><span>4 · Follow-up booked</span><span class="mono" style="color:#8EA0FF">in 2 days if no reply</span></div>
           <div class="mono" style="display:flex;gap:8px;align-items:center;color:#6E6C66;font-size:10px;margin-top:4px"><span style="width:6px;height:6px;border-radius:50%;background:#7EE0A4"></span>all 4 steps ran on their own · no one typed anything</div>
         </div>
         <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:10px">
